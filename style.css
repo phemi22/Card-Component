@@ -6,3 +6,171 @@
     box-sizing: border-box;
     font-family: "Inter", system-ui;
 }
+
+:root{
+    /* COLOR VARIABLES */
+    --backgroundColor: #f8f8f8;
+    --bigTextColor: black;
+    --mediumTextColor: #2e1f55;
+    --smallTextColor: #636363;
+    --outlineColor: #d9d9d9;
+    --buttonBackgroundColor: black;
+    --buttonTextColor: white;
+
+    /* TEXT VARIABLES */
+    --headlineTextSize: 1.6rem;
+    --titleTextSize: 2rem;
+    --bodyTextSize: 1rem;
+    --buttonTextSize: 1.1rem;
+    --bigFontWeight: 600;
+    --smallFontWeight: 500;
+
+    /* SPACE VARIABLES */
+    --marginSpace: 4rem;
+    --bigPadding: 2rem;
+    --smallPadding: 0.6rem;
+    --buttonPadding: 0.75rem;
+    --columnGapSpace: 0.75rem;
+    --smallColumnGap: 0.25rem;
+    --bigRowGapSpace: 3rem;
+    --mediumRowGap: 1.5rem;
+    --smallRowGapSpace: 1rem;
+    --smallerRowGapSpace: 0.75rem;
+    --smallestRowGap: 0.35rem;
+    --bigWidth: 100%;
+    --smallWidth: 35%;
+    --borderRadius: 0.75rem;
+    --smallBorderRadius: 0.35rem;
+    --buttonBorderRadius: 0.4rem;
+}
+
+.card-container{
+    width: var(--smallWidth);
+    height: auto;
+    margin: var(--marginSpace) auto;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--bigRowGapSpace);
+    padding: var(--bigPadding);
+    border-radius: var(--borderRadius);
+}
+
+.top-card-container{
+    width: var(--bigWidth);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--smallestRowGap);
+}
+
+.purchase-container{
+    width: fit-content;
+    height: auto;
+}
+
+.purchase-container p{
+    font-size: var(--headlineTextSize);
+    font-weight: var(--bigFontWeight);
+}
+
+.price-container{
+    width: var(--bigWidth);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.figure-container{
+    width: var(--bigWidth);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: var(--smallColumnGap);
+}
+
+.figure-container h1{
+    font-size: var(--titleTextSize);
+    color: var(--mediumTextColor);
+    font-weight: var(--bigFontWeight);
+}
+
+.figure-container p{
+    font-size: var(--bodyTextSize);
+    color: var(--smallTextColor);
+}
+
+.card-details-container{
+    width: var(--bigWidth);
+    height: auto;
+}
+
+.card-details-container p{
+    font-size: var(--bodyTextSize);
+    color: var(--smallTextColor);
+}
+
+.bottom-card-container{
+    width: var(--bigWidth);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: var(--smallestRowGap);
+}
+
+.card-image-container{
+    width: var(--bigWidth);
+    height: auto;
+    background-image: url(./Images/car-image.jpg);
+    padding: var(--bigPadding);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--borderRadius);
+}
+
+.card-button-container{
+    width: var(--bigWidth);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: var(--smallColumnGap);
+}
+
+.thumb-container{
+    width: fit-content;
+    height: auto;
+    background-color: var(--buttonBackgroundColor);
+    padding: var(--smallPadding);
+    border-radius: var(--smallBorderRadius);
+    color: var(--buttonTextColor);
+    cursor: pointer;
+}
+
+.button-container{
+    width: var(--bigWidth);
+    height: auto;
+}
+
+.button-container button{
+    width: var(--bigWidth);
+    height: auto;
+    background-color: var(--buttonBackgroundColor);
+    padding: var(--buttonPadding);
+    outline: none;
+    border: none;
+    border-radius: var(--buttonBorderRadius);
+    color: var(--buttonTextColor);
+    cursor: pointer;
+}
