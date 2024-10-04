@@ -195,40 +195,4 @@
     border-radius: var(--buttonBorderRadius);
     color: var(--buttonTextColor);
     cursor: pointer;
-    transition: background-color 1s ease-in-out, padding 1s ease-in-out, transform 1s ease-in-out;
-    width: var(--bigWidth);
-}
-
-button:hover{
-    background-color: green;
-    padding: 1rem 1.5rem;
-    transform:translateX(1rem);
-}
-
-@keyframes titleAnimation {
-    from{
-        transform: translateY(2rem);
-        color: white;
-        font-size: var(--buttonTextSize);
-    }
-
-    to{
-        transform: translateY(0);
-        color: var(--mediumTextColor);
-        font-size: var(--titleTextSize);
-    }
-}
-
-@keyframes paragraphAnimation{
-    from{
-        transform: translateY(2rem);
-        color: white;
-        font-size: 0.7rem;
-    }
-
-    to{
-        transform: translateY(0);
-        color: var(--smallTextColor);
-        font-size: var(--bodyTextSize);
-    }
 }
