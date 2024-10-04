@@ -46,10 +46,10 @@
 
 @media (prefers-color-scheme: dark){
     :root{
-        --backgroundColor: #230b42;
-        --bigTextColor: #f8f8f8;
-        --smallTextColor: #d9d9d9;
-        --mediumTextColor: #f8f8f8;
+        --backgroundColor: #181818;
+        --bigTextColor: #cacaca;
+        --smallTextColor: #c5c5c5;
+        --mediumTextColor: #cacaca;
     }
 }
 
@@ -110,12 +110,15 @@
     font-size: var(--titleTextSize);
     color: var(--mediumTextColor);
     font-weight: var(--bigFontWeight);
-    animation: titleAnimation 2s ease-in-out;
+    animation: titleAnimation 5s ease-in-out 2;
+    /* animation-iteration-count: 2; */
 }
 
 .figure-container p{
     font-size: var(--bodyTextSize);
     color: var(--smallTextColor);
+    animation: paragraphAnimation 5s ease-in-out 2;
+    /* animation-iteration-count: 2; */
 }
 
 .card-details-container{
@@ -213,5 +216,19 @@ button:hover{
         transform: translateY(0);
         color: var(--mediumTextColor);
         font-size: var(--titleTextSize);
+    }
+}
+
+@keyframes paragraphAnimation{
+    from{
+        transform: translateY(2rem);
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    to{
+        transform: translateY(0);
+        color: var(--smallTextColor);
+        font-size: var(--bodyTextSize);
     }
 }
